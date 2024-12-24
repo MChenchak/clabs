@@ -131,13 +131,12 @@ void check_pass(void)
 
 	int match = 1;
 
-
-		for (int i  = 0; i <4; i++) {
-			if(expected[i] != pass[i]) {
-				match = 0;
-				break;
-			}
+	for (int i  = 0; i <4; i++) {
+		if(expected[i] != pass[i]) {
+			match = 0;
+			break;
 		}
+	}
 
 	if(match == 1) {
 		const char *str = "BINGO!!!";
