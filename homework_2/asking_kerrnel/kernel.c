@@ -176,10 +176,6 @@ void keyboard_handler_main(void)
 		vidptr[current_loc++] = keyboard_map[(unsigned char) keycode];
 		vidptr[current_loc++] = 0x07;
 
-		if(len < 4) {
-			pass[len++] = keyboard_map[(unsigned char) keycode];
-		}
-		
 	}
 }
 
